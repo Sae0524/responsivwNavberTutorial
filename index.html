@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>How to creaate a responsive Navigation Bar </h2>
+  <img src="https://helpx.adobe.com/content/dam/help/ja/dreamweaver/how-to/create-responsive-navigation-menu/_jcr_content/main-pars/image/create-responsive-navigation-menu_1800x1012.jpg">
+  <p>In this blog, I will show how to build a responsive navigation bar from the very beginning by using flexbox and Javascript. I suppose that you have the understanding of HTML, CSS, and Javascript, especially the basic HTML tags and how to link the CSS and Javascript files to HTML files.</p><br>
+  <p>It is important to know how to create a responsive navigation bar correctly because most of the websites have a navigation bar on the top of the page. These days, a responsive design is getting more important because of the spread of mobile phones.</p><br>
+  <p>We will start with the mobile first approach for creating the navigation bar. That means we will build the navigation bar for mobile devices and then for the desktop using media queries.</p><br>
+  <hr>
+  <h3>Let's getting started</h3>
+  <p>Here’s the basic HTML for layout:</p>
+  <img src="code1.png">
+  <p>You can use any names for classes and Ids.</p>
+  <img src="pre1.png">
+  <p>This is what we got after writing the above code, this isn’t much, but we will make it better by styling it using CSS.</p><br>
+  <p>Let's add some basic styling to make it look nice:</p>
+  <img src="code2.png">
+  <img src="pre2.png">
+  <p>This looks much better, I have stripped off any default browser specific padding and margin of every element using the universal selector (*), and set the box-sizing to border-box to make it easy to resize elements.</p><br>
+  <p>I have used ‘Josefin Sans’ font for the navigation bar and a linear-gradient for the background. You can choose your own fonts, colors, and background.</p><br>
+  <p>Now add some padding and margin to make it look better.</p>
+  <img src="code3.png">
+  <img src="pre3.png">
+  <h3>The Toggle Button</h3>
+  <p>It’s starting to look good. Now let’s add a little toggle button at the top right corner. For this, I am going to use Font Awesome icons.</p>
+  <img src="fontAwesome.png">
+  <p>You need to have the Font Awesome icons link to your HTML head and you can use a icon code</p>
+  <img src="code4.png">
+  <img src="pre4.png">
+  <p>This is what it looks like. Notice the little hamburger icon in the top left corner, this is looking weird. So let’s reposition and style it.</p>
+  <img src="code5.png">
+  <img src="pre5.png">
+  <p>The navbar for mobile devices is almost complete now. Let’s add a little bit of JavaScript to enable toggle menu.</p><br>
+  <p>I have hidden the menu so that it’s not visible by default.</p>
+  <img src="code6.png">
+  <img src="pre6.png">
+  <p>Now let’s add some JavaScript code to make it visible when someone clicks on the hamburger icon.</p>
+  <img src="code7.png">
+  <p>This code toggles the active class on the menu list. So add following code in the CSS file.</p>
+  <img src="code8.png">
+  <video src="preVideo1.mov" autoplay muted></video>
+  <p>Nice and easy, with that our mobile part is over, now let’s move to the desktop part.
+  </p>
+  <hr>
+  <h3>For Desktop:</h3>
+  <p>for desktop, all we have to do is to change flex-direction property to row and give a .navbar class a display property of flex.</p>
+  <img src="code9.png">
+  <img src="pre7.png">
+  <h3>Final Code:</h3>
+  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="sae0524" data-slug-hash="KKNXmBO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KKNXmBO">
+    <span>See the Pen <a href="https://codepen.io/sae0524/pen/KKNXmBO">
+    KKNXmBO</a> by Sae0524 (<a href="https://codepen.io/sae0524">@sae0524</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>
